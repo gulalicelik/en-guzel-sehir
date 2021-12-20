@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #fa781b;
+}
+.container {
+  height: 444px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.modal-opacity {
+  visibility: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1;
+}
+.modal-message {
+  top: -180px;
+  visibility: hidden;
+  position: absolute;
+  height: 180px;
+  width: 600px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  z-index: 2;
+  padding: 25px 35px;
+  -webkit-box-shadow: 4px 7px 44px -3px rgba(0, 0, 0, 0.42);
+  box-shadow: 4px 7px 44px -3px rgba(0, 0, 0, 0.42);
+  transition: all 1s;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+.close .kangiratolatonis {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+.kangiratolatonis-text {
+  font-size: 25px;
+}
+.question {
+  color: white;
+  font-size: 44px;
+}
+.buttons {
+  position: relative;
+  width: 644px;
+  height: 344px;
+}
+.btn {
+  display: inline-block;
+  position: absolute;
+  height: 88px;
+  width: 144px;
+  border: none;
+  font-size: 22px;
+  border-radius: 11px;
+  color: white;
+  background-color: #17591f;
+}
+.false {
+  right: 44px;
+  bottom: 1px;
+}
+.true {
+  left: 44px;
+  bottom: 1px;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
